@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">레이아웃에서 카테고리를 메뉴로</title>
+	<description xml:lang="ko">레이아웃에 설정된 메뉴 목록을 모듈의 카테고리 목록과 연동해주는 애드온</description>
+	<version>0.2</version>
+	<date>2021-02-08</date>
+	<author email_address="cydemo@gmail.com" link="https://xetown.com">
+		<name xml:lang="ko">cydemo</name>
+	</author>
+	<extra_vars>
+		<var name="target_menu">
+			<title xml:lang="ko">대상 메뉴</title>
+			<description xml:lang="ko">해당 레이아웃에서 카테고리 리스트로 교체될 메뉴 리스트의 id</description>
+		</var>
+		<var name="into_which" type="select">
+			<title xml:lang="ko">연동 방식</title>
+			<description xml:lang="ko">위에서 지정한 대상 메뉴와 어떻게 연동할 것인지 결정합니다.</description>
+			<options value="">
+				<title xml:lang="ko">완전 대체</title>
+			</options>
+			<options value="C">
+				<title xml:lang="ko">상호 병합</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">하위 삽입</title>
+			</options>
+		</var>
+		<var name="node_srl">
+			<title xml:lang="ko">메뉴 번호</title>
+			<description xml:lang="ko">하위 메뉴로 삽입시 해당 메뉴의 번호를 입력하세요.(사이트 맵 트리에서 개발자도구로 보이는 번호)</description>
+		</var>
+	</extra_vars>
+</addon>
