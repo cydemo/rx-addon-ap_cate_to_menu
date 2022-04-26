@@ -2,8 +2,8 @@
 <addon version="0.2">
 	<title xml:lang="ko">레이아웃에서 카테고리를 메뉴로</title>
 	<description xml:lang="ko">레이아웃에 설정된 메뉴 목록을 모듈의 카테고리 목록과 연동해주는 애드온</description>
-	<version>0.2</version>
-	<date>2021-02-08</date>
+	<version>0.2.1</version>
+	<date>2022-04-26</date>
 	<author email_address="cydemo@gmail.com" link="https://xetown.com">
 		<name xml:lang="ko">cydemo</name>
 	</author>
