@@ -1,6 +1,6 @@
 <?php
 if ( !defined('RX_VERSION') ) return;
-if ( $called_position !== 'before_module_init' ) return;
+if ( $called_position !== 'after_module_proc' ) return;
 
 getController('module')->addTriggerFunction('layout', 'before', function($oModule) use($addon_info)
 {
@@ -16,8 +16,7 @@ getController('module')->addTriggerFunction('layout', 'before', function($oModul
 	if ( !$category_list )
 	{
 		// 현재의 모듈 번호 추출
-		$module_srl = $this->module_info->module_srl;
-		$category_list = getModel('document')->getCategoryList($module_srl);
+		$category_list = getModel('document')->getCategoryList($oModule->module_srl);
 		if ( !$category_list ) return;
 	}
 
